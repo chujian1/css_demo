@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css_实现动画_animation</title>
+    <style>
+        /*
+        animation:
+        animation-name 需要绑定到选择器的keyframe的名称
+        animation-duration 动画所花费时间
+        animation-timing-function 动画的速度曲线
+        animation-delay 延迟播放的时间
+        animation-iteration-count 动画播放的次数
+        animation-direction 是否应该轮流反向播放动画
+Internet Explorer 10、Firefox 以及 Opera 支持 animation 属性。
+Safari 和 Chrome 支持替代的 -webkit-animation 属性。
+注释：Internet Explorer 9 以及更早的版本不支持 animation 属性。
+        */
+        img{
+            -webkit-animation: change 1s infinite;
+        }
+
+@-webkit-keyframes change {
+
+    0%{width:90px; height:90px;  }
+    50%{width:130px; height:130px;}
+    100%{width:200px; height:200px;}
+}
+    </style>
+</head>
+<body>
+<div id="root">
+    <img src="8.jpg"/>
+</div>
+
+</body>
+</html>

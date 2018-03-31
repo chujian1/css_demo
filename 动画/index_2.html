@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css_实现动画_transition</title>
+    <style>
+        /*
+        transition:transition-property transition-duration transition-timing-function transition-delay;
+        过渡效果的css属性 所需时间 速度效果的速度曲线 过渡效果何时开始
+        */
+        .img1{
+            height:100px;
+            width:100px;
+            //transition: height 3s ;
+            transition:width 2s;//使用2s宽度变为300px；
+        }
+        .img2{
+            height:100px;
+            width:100px;
+        // transition: height 2s linear;
+            transition:width 2s 3s linear;//3s后，使用2s宽度变为300px；
+        }
+        img:hover{
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <img class="img1" src="8.jpg" />
+</div>
+<div>
+    <img class="img2" src="8.jpg" />
+</div>
+</body>
+</html>
