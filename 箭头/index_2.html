@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css实现箭头_transform实现</title>
+    <style>
+        #root{
+            width:10px;
+            height:10px;
+            border:1px solid;
+            border-color: red red  transparent transparent;
+            transform: rotate(-45deg);//逆时针旋转45度
+        }
+        #ite_1{
+            width:10px;
+            height:10px;
+            border:1px solid red ;
+            transform: translate(200px,100px);//向右水平平移200px，向下竖直平移100px
+        }
+        #ite_2{
+            width:10px;
+            height:10px;
+            border:1px solid red ;
+            transform: scale(1.5);//按比例缩放
+        }
+        #ite_3{
+            width:10px;
+            height:10px;
+            border:1px solid red ;
+            transform: skew(10deg,10deg);//沿xy轴倾斜
+        }
+
+    </style>
+</head>
+<body>
+<div id="root"></div>
+<div id="ite_1"></div>
+<div id="ite_2"></div>
+<div id="ite_3"></div>
+</body>
+</html>

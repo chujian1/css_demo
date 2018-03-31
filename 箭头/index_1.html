@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css实现箭头_定位实现</title>
+    <style>
+        #container{
+            position:relative;
+            width:200px;
+            height:200px;
+            border:1px solid red;
+        }
+        #item_1,#item_2{
+            position: absolute;
+            width:0px;
+            height:0px;
+            border:20px solid transparent;
+            border-right-color:red;
+        }
+        #item_1{
+            left:10px;
+        }
+        #item_2{
+            left:12px;
+            border-right-color:white;
+
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="item_1">
+
+    </div>
+    <div id="item_2">
+
+    </div>
+</div>
+</body>
+</html>
