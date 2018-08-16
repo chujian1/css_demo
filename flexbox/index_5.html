@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直方向富裕空间管理</title>
+    <style>
+        #box{
+            height:300px;border:5px solid black;padding:5px;display:-webkit-box;-webkit-box-direction: reverse;
+            -webkit-box-pack:center;-webkit-box-align: center;
+
+            /*
+            -webkit-box-align: center; 垂直居中
+            -webkit-box-align: start;默认值  盒子顶端
+            -webkit-box-align: end;盒子底端
+            */
+        }
+        #box div{
+            width:100px;height:100px;border:1px solid white;background-color:red;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+    <div id="div5">div5</div>
+    <div id="div6">div6</div>
+</div>
+</body>
+</html>
